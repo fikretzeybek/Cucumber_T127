@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="153.328" tests="13" skipped="0" failures="3" errors="0">
+<testcase classname="US1011 scenario'da verilen yanlis bilgilerle negatif login testi" name="TC17 liste olarak verilen yanlis kullanici bilgileri ile giris yapilamamali - Example #1.1" time="22.232">
+<system-out><![CDATA[
+Given kullanici "toUrl" anasayfaya gider....................................passed
+Then account butonuna basar.................................................passed
+When email olarak listede verilen "esra@fmail.com" girer....................passed
+And password olarak listede verilen "1234555" girer.........................passed
+Then signIn butonuna basar..................................................passed
+And sisteme giris yapamadigini test eder....................................passed
+And 1 saniye bekler.........................................................passed
+Then sayfayi kapatir........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1011 scenario'da verilen yanlis bilgilerle negatif login testi" name="TC17 liste olarak verilen yanlis kullanici bilgileri ile giris yapilamamali - Example #1.2" time="12.793">
+<system-out><![CDATA[
+Given kullanici "toUrl" anasayfaya gider....................................passed
+Then account butonuna basar.................................................passed
+When email olarak listede verilen "gamze@gmail.com" girer...................passed
+And password olarak listede verilen "mesela123" girer.......................passed
+Then signIn butonuna basar..................................................passed
+And sisteme giris yapamadigini test eder....................................passed
+And 1 saniye bekler.........................................................passed
+Then sayfayi kapatir........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1011 scenario'da verilen yanlis bilgilerle negatif login testi" name="TC17 liste olarak verilen yanlis kullanici bilgileri ile giris yapilamamali - Example #1.3" time="16.878">
+<system-out><![CDATA[
+Given kullanici "toUrl" anasayfaya gider....................................passed
+Then account butonuna basar.................................................passed
+When email olarak listede verilen "zehra@zmail.com" girer...................passed
+And password olarak listede verilen "asdf4321" girer........................passed
+Then signIn butonuna basar..................................................passed
+And sisteme giris yapamadigini test eder....................................passed
+And 1 saniye bekler.........................................................passed
+Then sayfayi kapatir........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1011 scenario'da verilen yanlis bilgilerle negatif login testi" name="TC17 liste olarak verilen yanlis kullanici bilgileri ile giris yapilamamali - Example #1.4" time="16.338">
+<system-out><![CDATA[
+Given kullanici "toUrl" anasayfaya gider....................................passed
+Then account butonuna basar.................................................passed
+When email olarak listede verilen "ayca@amail.com" girer....................passed
+And password olarak listede verilen "6543241tre65" girer....................passed
+Then signIn butonuna basar..................................................passed
+And sisteme giris yapamadigini test eder....................................passed
+And 1 saniye bekler.........................................................passed
+Then sayfayi kapatir........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1011 scenario'da verilen yanlis bilgilerle negatif login testi" name="TC17 liste olarak verilen yanlis kullanici bilgileri ile giris yapilamamali - Example #1.5" time="10.621">
+<system-out><![CDATA[
+Given kullanici "toUrl" anasayfaya gider....................................passed
+Then account butonuna basar.................................................passed
+When email olarak listede verilen "gulnur@gmail.com" girer..................passed
+And password olarak listede verilen "123ert678" girer.......................passed
+Then signIn butonuna basar..................................................passed
+And sisteme giris yapamadigini test eder....................................passed
+And 1 saniye bekler.........................................................passed
+Then sayfayi kapatir........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1012 Excel olarak verilen urunler ve min. stok miktarlari testi" name=": TC18 excel olarak verilen listedeki urunler min. stok bulundurmali - Example #1.1" time="10.265">
+<failure type="java.lang.AssertionError">
+<![CDATA[java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at stepdefinitions.TestotomasyonuStepdefinitions.stokMiktarininDaVerilenStokMiktarindanFazlaOldugunuTestEder(TestotomasyonuStepdefinitions.java:179)
+	at ✽.stok miktarinin "2" da verilen stok miktarindan fazla oldugunu test eder(file:///E:/IdeaProjects/Cucamber_T127/src/test/resources/features/US1012_ExcelOlarakVerilenListedenUrunKontrolu.feature:7)
+]]>
+</failure>
+<system-out><![CDATA[
+Given kullanici "toUrl" anasayfaya gider....................................passed
+Then stok excelindeki "2" daki urunun stok miktarini bulur..................passed
+And stok miktarinin "2" da verilen stok miktarindan fazla oldugunu test eder.failed
+And sayfayi kapatir.........................................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="US1012 Excel olarak verilen urunler ve min. stok miktarlari testi" name=": TC18 excel olarak verilen listedeki urunler min. stok bulundurmali - Example #1.2" time="8.527">
+<system-out><![CDATA[
+Given kullanici "toUrl" anasayfaya gider....................................passed
+Then stok excelindeki "3" daki urunun stok miktarini bulur..................passed
+And stok miktarinin "3" da verilen stok miktarindan fazla oldugunu test eder.passed
+And sayfayi kapatir.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1012 Excel olarak verilen urunler ve min. stok miktarlari testi" name=": TC18 excel olarak verilen listedeki urunler min. stok bulundurmali - Example #1.3" time="7.301">
+<system-out><![CDATA[
+Given kullanici "toUrl" anasayfaya gider....................................passed
+Then stok excelindeki "4" daki urunun stok miktarini bulur..................passed
+And stok miktarinin "4" da verilen stok miktarindan fazla oldugunu test eder.passed
+And sayfayi kapatir.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1012 Excel olarak verilen urunler ve min. stok miktarlari testi" name=": TC18 excel olarak verilen listedeki urunler min. stok bulundurmali - Example #1.4" time="8.809">
+<system-out><![CDATA[
+Given kullanici "toUrl" anasayfaya gider....................................passed
+Then stok excelindeki "5" daki urunun stok miktarini bulur..................passed
+And stok miktarinin "5" da verilen stok miktarindan fazla oldugunu test eder.passed
+And sayfayi kapatir.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1012 Excel olarak verilen urunler ve min. stok miktarlari testi" name=": TC18 excel olarak verilen listedeki urunler min. stok bulundurmali - Example #1.5" time="16.153">
+<failure type="java.lang.AssertionError">
+<![CDATA[java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at stepdefinitions.TestotomasyonuStepdefinitions.stokMiktarininDaVerilenStokMiktarindanFazlaOldugunuTestEder(TestotomasyonuStepdefinitions.java:179)
+	at ✽.stok miktarinin "6" da verilen stok miktarindan fazla oldugunu test eder(file:///E:/IdeaProjects/Cucamber_T127/src/test/resources/features/US1012_ExcelOlarakVerilenListedenUrunKontrolu.feature:7)
+]]>
+</failure>
+<system-out><![CDATA[
+Given kullanici "toUrl" anasayfaya gider....................................passed
+Then stok excelindeki "6" daki urunun stok miktarini bulur..................passed
+And stok miktarinin "6" da verilen stok miktarindan fazla oldugunu test eder.failed
+And sayfayi kapatir.........................................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="US1012 Excel olarak verilen urunler ve min. stok miktarlari testi" name=": TC18 excel olarak verilen listedeki urunler min. stok bulundurmali - Example #1.6" time="7.175">
+<system-out><![CDATA[
+Given kullanici "toUrl" anasayfaya gider....................................passed
+Then stok excelindeki "7" daki urunun stok miktarini bulur..................passed
+And stok miktarinin "7" da verilen stok miktarindan fazla oldugunu test eder.passed
+And sayfayi kapatir.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1012 Excel olarak verilen urunler ve min. stok miktarlari testi" name=": TC18 excel olarak verilen listedeki urunler min. stok bulundurmali - Example #1.7" time="8.091">
+<system-out><![CDATA[
+Given kullanici "toUrl" anasayfaya gider....................................passed
+Then stok excelindeki "8" daki urunun stok miktarini bulur..................passed
+And stok miktarinin "8" da verilen stok miktarindan fazla oldugunu test eder.passed
+And sayfayi kapatir.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1012 Excel olarak verilen urunler ve min. stok miktarlari testi" name=": TC18 excel olarak verilen listedeki urunler min. stok bulundurmali - Example #1.8" time="7.034">
+<failure type="java.lang.AssertionError">
+<![CDATA[java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at stepdefinitions.TestotomasyonuStepdefinitions.stokMiktarininDaVerilenStokMiktarindanFazlaOldugunuTestEder(TestotomasyonuStepdefinitions.java:179)
+	at ✽.stok miktarinin "9" da verilen stok miktarindan fazla oldugunu test eder(file:///E:/IdeaProjects/Cucamber_T127/src/test/resources/features/US1012_ExcelOlarakVerilenListedenUrunKontrolu.feature:7)
+]]>
+</failure>
+<system-out><![CDATA[
+Given kullanici "toUrl" anasayfaya gider....................................passed
+Then stok excelindeki "9" daki urunun stok miktarini bulur..................passed
+And stok miktarinin "9" da verilen stok miktarindan fazla oldugunu test eder.failed
+And sayfayi kapatir.........................................................skipped
+]]></system-out>
+</testcase>
+</testsuite>
